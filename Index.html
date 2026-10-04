@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="tab-title">APLearning</title>
+    <link id="tab-favicon" rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        :root {
+            --bg: #080808;
+            --panel: #101010;
+            --panel-2: #151515;
+            --accent: #fc2651;
+            --accent-bright: #ff4d75;
+            --text: #f5f5f5;
+            --muted: #aaa;
+        }
+
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Intro Section */
+        #intro {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 50% 35%, rgba(252, 38, 81, 0.10), transparent 38%),
+                linear-gradient(180deg, #090909 0%, #050505 100%);
+        }
+
+        #intro::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(255,255,255,0.018) 0,
+                rgba(255,255,255,0.018) 1px,
+                transparent 1px,
+                transparent 4px
+            );
+            opacity: .35;
+        }
+
+        .intro-card {
+            width: min(620px, 92vw);
+            padding: 48px 42px 42px;
+            text-align: center;
+            border: 1px solid rgba(252, 38, 81, .28);
+            border-radius: 16px;
+            background: linear-gradient(180deg, rgba(18,18,18,.96), rgba(10,10,10,.96));
+            box-shadow:
+                0 0 0 1px rgba(255,255,255,.025) inset,
+                0 18px 60px rgba(0,0,0,.65),
+                0 0 45px rgba(252,38,81,.08);
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-card h1 {
+            margin: 0 0 28px;
+            font-size: clamp(28px, 5vw, 46px);
+            line-height: 1.1;
+            font-weight: 800;
+            letter-spacing: .02em;
+            color: var(--text);
+            text-shadow: 0 0 18px rgba(252,38,81,.12);
+        }
+
+        #continueBtn, .action-btn {
+            appearance: none;
+            border: 0;
+            border-radius: 10px;
+            padding: 14px 34px;
+            min-width: 160px;
+            font-size: 16px;
+            font-weight: 800;
+            cursor: pointer;
+            color: #111;
+            background: linear-gradient(180deg, var(--accent-bright), var(--accent));
+            box-shadow: 0 8px 24px rgba(252, 38, 81, .22);
+            transition: transform .16s ease, box-shadow .16s ease, filter .16s ease;
+        }
+
+        #continueBtn:hover, .action-btn:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.08);
+            box-shadow: 0 12px 30px rgba(252, 38, 81, .30);
+        }
+
+        #continueBtn:active, .action-btn:active {
+            transform: translateY(0);
+        }
+
+        #status {
+            margin-top: 18px;
+            min-height: 20px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        /* Full Screen Site Viewport */
+        #siteFrame {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        /* Floating Settings Button */
+        #settingsToggleBtn {
+            position: fixed;
+            top: 18px;
+            right: 18px;
+            z-index: 999999;
+            background: var(--panel-2);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text);
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.6);
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        #settingsToggleBtn:hover {
+            transform: rotate(45deg);
+            background: var(--panel);
+            border-color: var(--accent);
+        }
+
+        #settingsToggleBtn svg {
+            width: 22px;
+            height: 22px;
+            fill: currentColor;
+        }
+
+        /* Settings Modal Overlay */
+        #settingsModal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 9999999;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(8px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        #settingsModal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--panel);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 14px;
+            width: min(440px, 95vw);
+            padding: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.9);
+            color: var(--text);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 12px;
+        }
+
+        .modal-header h2 {
+            margin: 0;
+            font-size: 20px;
+            color: var(--text);
+        }
+
+        .close-btn {
+            background: transparent;
+            border: 0;
+            color: var(--muted);
+            font-size: 26px;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close-btn:hover {
+            color: var(--text);
+        }
+
+        .setting-group {
+            margin-bottom: 20px;
+        }
+
+        .setting-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--muted);
+        }
+
+        .setting-control-row {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        input[type="color"] {
+            appearance: none;
+            -webkit-appearance: none;
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            cursor: pointer;
+            background: none;
+        }
+
+        input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
+        }
+
+        input[type="color"]::-webkit-color-swatch {
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+        }
+
+        select, input[type="text"] {
+            width: 100%;
+            padding: 10px 12px;
+            background: var(--panel-2);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            color: var(--text);
+            font-size: 14px;
+            outline: none;
+        }
+
+        select:focus, input[type="text"]:focus {
+            border-color: var(--accent);
+        }
+
+        .preset-colors {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .color-swatch {
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: transform 0.15s ease;
+        }
+
+        .color-swatch:hover {
+            transform: scale(1.15);
+        }
+
+        .custom-cloak-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .full-width-btn {
+            width: 100%;
+            margin-top: 8px;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Settings Trigger Button -->
+    <button id="settingsToggleBtn" type="button" aria-label="Settings" title="Settings">
+        <svg viewBox="0 0 24 24">
+            <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6-3.6z"/>
+        </svg>
+    </button>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="close-btn" id="closeSettingsBtn">&times;</button>
+            </div>
+
+            <!-- Accent Color -->
+            <div class="setting-group">
+                <label for="accentColorPicker">Accent Color</label>
+                <div class="setting-control-row">
+                    <input type="color" id="accentColorPicker" value="#fc2651">
+                    <span id="colorHexCode" style="font-family: monospace; font-size: 14px;">#fc2651</span>
+                </div>
+                <div class="preset-colors">
+                    <div class="color-swatch" style="background: #fc2651;" data-color="#fc2651"></div>
+                    <div class="color-swatch" style="background: #3b82f6;" data-color="#3b82f6"></div>
+                    <div class="color-swatch" style="background: #10b981;" data-color="#10b981"></div>
+                    <div class="color-swatch" style="background: #8b5cf6;" data-color="#8b5cf6"></div>
+                    <div class="color-swatch" style="background: #f59e0b;" data-color="#f59e0b"></div>
+                    <div class="color-swatch" style="background: #ec4899;" data-color="#ec4899"></div>
+                </div>
+            </div>
+
+            <!-- Tab Cloaker -->
+            <div class="setting-group">
+                <label for="cloakPreset">Tab Cloaker Preset</label>
+                <select id="cloakPreset">
+                    <option value="none">Default (APLearning)</option>
+                    <option value="google">Google Search</option>
+                    <option value="drive">Google Drive</option>
+                    <option value="classroom">Google Classroom</option>
+                    <option value="canvas">Canvas</option>
+                    <option value="custom">Custom...</option>
+                </select>
+
+                <div id="customCloakGroup" class="custom-cloak-inputs" style="display: none;">
+                    <input type="text" id="customTitle" placeholder="Custom Tab Title">
+                    <input type="text" id="customFavicon" placeholder="Custom Favicon URL">
+                </div>
+            </div>
+
+            <!-- New about:blank Window Cloaker -->
+            <div class="setting-group">
+                <label>about:blank Tab Cloak</label>
+                <button type="button" class="action-btn full-width-btn" id="aboutBlankBtn">Open in about:blank Tab</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Intro Card -->
+    <section id="intro" aria-label="Intro">
+        <div class="intro-card">
+            <h1>this might not work but idc</h1>
+            <button id="continueBtn" type="button">Continue</button>
+            <div id="status" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- Isolated Site Frame -->
+    <iframe id="siteFrame"></iframe>
+
+<script>
+(function () {
+    const SOURCE = "https://unpkg.com/snoopycollegetricks@latest/index.html";
+
+    const intro = document.getElementById("intro");
+    const button = document.getElementById("continueBtn");
+    const status = document.getElementById("status");
+    const siteFrame = document.getElementById("siteFrame");
+
+    const settingsToggleBtn = document.getElementById("settingsToggleBtn");
+    const settingsModal = document.getElementById("settingsModal");
+    const closeSettingsBtn = document.getElementById("closeSettingsBtn");
+    const accentColorPicker = document.getElementById("accentColorPicker");
+    const colorHexCode = document.getElementById("colorHexCode");
+    const cloakPreset = document.getElementById("cloakPreset");
+    const customCloakGroup = document.getElementById("customCloakGroup");
+    const customTitleInput = document.getElementById("customTitle");
+    const customFaviconInput = document.getElementById("customFavicon");
+    const aboutBlankBtn = document.getElementById("aboutBlankBtn");
+
+    const PRESETS = {
+        none: { title: "APLearning", icon: "favicon.ico" },
+        google: { title: "Google", icon: "https://www.google.com/favicon.ico" },
+        drive: { title: "My Drive - Google Drive", icon: "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png" },
+        classroom: { title: "Classes", icon: "https://ssl.gstatic.com/classroom/favicon.png" },
+        canvas: { title: "Dashboard", icon: "https://du11hjcvx0uqb.cloudfront.net/br/dist/images/favicon-e10d657a73.ico" }
+    };
+
+    function adjustBrightness(hex, percent) {
+        let num = parseInt(hex.replace('#', ''), 16),
+            amt = Math.round(2.55 * percent),
+            R = (num >> 16) + amt,
+            G = (num >> 8 & 0x00FF) + amt,
+            B = (num & 0x0000FF) + amt;
+        return '#' + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+            (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 +
+            (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+    }
+
+    function setAccentColor(color) {
+        document.documentElement.style.setProperty('--accent', color);
+        document.documentElement.style.setProperty('--accent-bright', adjustBrightness(color, 25));
+        accentColorPicker.value = color;
+        colorHexCode.textContent = color;
+        localStorage.setItem('userAccentColor', color);
+    }
+
+    function applyCloak(presetKey, customTitle = '', customFav = '') {
+        let title = "APLearning";
+        let icon = "favicon.ico";
+
+        if (presetKey === 'custom') {
+            title = customTitle || "APLearning";
+            icon = customFav || "favicon.ico";
+            customCloakGroup.style.display = 'flex';
+        } else {
+            customCloakGroup.style.display = 'none';
+            if (PRESETS[presetKey]) {
+                title = PRESETS[presetKey].title;
+                icon = PRESETS[presetKey].icon;
+            }
+        }
+
+        document.title = title;
+        let faviconEl = document.getElementById("tab-favicon");
+        if (!faviconEl) {
+            faviconEl = document.createElement("link");
+            faviconEl.id = "tab-favicon";
+            faviconEl.rel = "icon";
+            document.head.appendChild(faviconEl);
+        }
+        faviconEl.href = icon;
+
+        localStorage.setItem('userCloakPreset', presetKey);
+        localStorage.setItem('userCustomTitle', customTitle);
+        localStorage.setItem('userCustomFavicon', customFav);
+    }
+
+    // New about:blank tab cloak launcher
+    function launchAboutBlank() {
+        const newWin = window.open('about:blank', '_blank');
+        if (!newWin) {
+            alert('Popup blocked! Please allow popups for this site.');
+            return;
+        }
+
+        const presetKey = cloakPreset.value;
+        let title = document.title;
+        let icon = PRESETS[presetKey] ? PRESETS[presetKey].icon : "favicon.ico";
+
+        newWin.document.title = title;
+
+        const link = newWin.document.createElement('link');
+        link.rel = 'icon';
+        link.href = icon;
+        newWin.document.head.appendChild(link);
+
+        const iframe = newWin.document.createElement('iframe');
+        iframe.style.width = '100vw';
+        iframe.style.height = '100vh';
+        iframe.style.border = 'none';
+        iframe.style.position = 'fixed';
+        iframe.style.inset = '0';
+        iframe.src = window.location.href;
+
+        newWin.document.body.style.margin = '0';
+        newWin.document.body.appendChild(iframe);
+    }
+
+    function loadSavedSettings() {
+        const savedColor = localStorage.getItem('userAccentColor');
+        if (savedColor) setAccentColor(savedColor);
+
+        const savedPreset = localStorage.getItem('userCloakPreset') || 'none';
+        const savedCustomTitle = localStorage.getItem('userCustomTitle') || '';
+        const savedCustomFav = localStorage.getItem('userCustomFavicon') || '';
+
+        cloakPreset.value = savedPreset;
+        customTitleInput.value = savedCustomTitle;
+        customFaviconInput.value = savedCustomFav;
+
+        applyCloak(savedPreset, savedCustomTitle, savedCustomFav);
+    }
+
+    // Settings Event Listeners
+    settingsToggleBtn.onclick = () => settingsModal.classList.add('active');
+    closeSettingsBtn.onclick = () => settingsModal.classList.remove('active');
+    settingsModal.onclick = (e) => { if (e.target === settingsModal) settingsModal.classList.remove('active'); };
+    accentColorPicker.oninput = (e) => setAccentColor(e.target.value);
+    document.querySelectorAll('.color-swatch').forEach(swatch => {
+        swatch.onclick = () => setAccentColor(swatch.getAttribute('data-color'));
+    });
+    cloakPreset.onchange = (e) => applyCloak(e.target.value, customTitleInput.value, customFaviconInput.value);
+    customTitleInput.oninput = () => applyCloak('custom', customTitleInput.value, customFaviconInput.value);
+    customFaviconInput.oninput = () => applyCloak('custom', customTitleInput.value, customFaviconInput.value);
+    aboutBlankBtn.onclick = launchAboutBlank;
+
+    // Clean ads inside the iframe window context
+    function cleanFramePage(frameDoc) {
+        if (!frameDoc) return;
+        const selectors = [
+            'ins.adsbygoogle',
+            '[data-ad]', '[data-ad-slot]', '[data-ad-client]',
+            '[aria-label*="advertisement" i]',
+            '[aria-label*="sponsored" i]',
+            'iframe[src*="doubleclick" i]',
+            'iframe[src*="googlesyndication" i]',
+            'iframe[src*="adnxs" i]',
+            'iframe[src*="adsystem" i]',
+            '[id^="ad-"]', '[id^="ads-"]',
+            '[class^="ad-"]', '[class^="ads-"]'
+        ];
+        frameDoc.querySelectorAll(selectors.join(',')).forEach(el => el.remove());
+
+        frameDoc.querySelectorAll('script[src]').forEach(script => {
+            const src = script.src.toLowerCase();
+            if (/doubleclick|googlesyndication|googleadservices|adnxs|adsystem|popads|propellerads/.test(src)) {
+                script.remove();
+            }
+        });
+    }
+
+    function loadSite() {
+        button.disabled = true;
+        button.textContent = "Loading...";
+        status.textContent = "";
+
+        siteFrame.src = SOURCE;
+        
+        siteFrame.onload = () => {
+            intro.style.display = 'none';
+            siteFrame.style.display = 'block';
+
+            try {
+                const frameDoc = siteFrame.contentDocument || siteFrame.contentWindow.document;
+                cleanFramePage(frameDoc);
+
+                const observer = new MutationObserver(() => cleanFramePage(frameDoc));
+                observer.observe(frameDoc.documentElement, { childList: true, subtree: true });
+            } catch (err) {
+                console.log("Framed site loaded.");
+            }
+        };
+
+        siteFrame.onerror = () => {
+            button.disabled = false;
+            button.textContent = "Continue";
+            status.textContent = "The site could not be loaded. Try again.";
+        };
+    }
+
+    button.addEventListener("click", loadSite);
+    loadSavedSettings();
+})();
+</script>
+</body>
+</html>
