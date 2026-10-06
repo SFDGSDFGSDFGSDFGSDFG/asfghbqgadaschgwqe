@@ -1,0 +1,376 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="root" width="100%" height="100%" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpjZDczYjIzNi1iNjdlLTQxNWMtYWY3ZC03NTljMzM2NmQ0NWYAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaOeRdu5qLEONDXuPg2Y7ezMAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDozMzMyZjExZC03ODhjLTQxYzktOTllMS0wYjAzMDVmZjJiZGVscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoWCpjpEzn09K3fu1U7sMh2gAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggX99hDtic+1r2WfL0NxKKjGghYBSqguuTPcPMq0W3ZEWkZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaK/YbMSsFcMxho/8L5qKdtgAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCBn9Qc/T+rDEJG2L4jYrcDYcK8jQcFotcgSiZ98U4wAqGRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi3Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmNkNzNiMjM2LWI2N2UtNDE1Yy1hZjdkLTc1OWMzMzY2ZDQ1Zi9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOmY5MmIyNTI5LWU3NTYtNDlhYS04ZGMzLTBiYTg2ZTAzM2Q5NXJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCBf32EO2Jz7WvZZ8vQ3EoqMaCFgFKqC65M9w8yrRbdkRaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggKjOSPaMVRjoXKpYg+xMTVZfMv/PIU8ZsGKom+8/ee36iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggeKeV/2ThTkhUwfe4EjsEMCTbhqCxlHAZSCc2kO+2kmp0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQNEK3ezxRlacoa6Ne04dmplBpemvdfAe7TeIVW0dynpufuWfRIWmB1mn+TpCGvVpneBIYDcOO9QlToVN/LPCGBg=</c2pa:manifest></metadata>
+  <title id="svg-title">APLearning</title>
+
+  <style><![CDATA[
+    :root {
+      --bg: #080808;
+      --panel: #101010;
+      --panel-2: #151515;
+      --accent: #fc2651;
+      --accent-bright: #ff4d75;
+      --text: #f5f5f5;
+      --muted: #aaa;
+    }
+    svg { background: #080808; font-family: Arial, Helvetica, sans-serif; }
+    text { font-family: Arial, Helvetica, sans-serif; }
+
+    #continueGroup { cursor: pointer; transition: transform .16s ease, filter .16s ease; }
+    #continueGroup:hover { filter: brightness(1.08); }
+    #continueGroup.disabled { cursor: default; opacity: .7; }
+
+    #gearBtn { cursor: pointer; }
+    #gearBtn .ring { fill: var(--panel-2); stroke: rgba(255,255,255,.15); stroke-width: 1; }
+    #gearBtn:hover .ring { fill: var(--panel); stroke: var(--accent); }
+
+    #closeBtn { cursor: pointer; }
+    #closeBtn text { fill: var(--muted); }
+    #closeBtn:hover text { fill: var(--text); }
+
+    .swatch { cursor: pointer; stroke: transparent; stroke-width: 2; transition: transform .15s ease; transform-box: fill-box; transform-origin: center; }
+    .swatch:hover { transform: scale(1.15); }
+
+    #aboutBlankGroup { cursor: pointer; }
+    #aboutBlankGroup:hover { filter: brightness(1.08); }
+
+    .fo-body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; color: #f5f5f5; }
+    .fo-body input[type="color"] {
+      appearance: none; -webkit-appearance: none; border: none; width: 42px; height: 42px;
+      border-radius: 8px; cursor: pointer; background: none; padding: 0;
+    }
+    .fo-body input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+    .fo-body input[type="color"]::-webkit-color-swatch { border: 1px solid rgba(255,255,255,.2); border-radius: 8px; }
+    .fo-body select, .fo-body input[type="text"] {
+      width: 100%; box-sizing: border-box; padding: 10px 12px; background: #151515;
+      border: 1px solid rgba(255,255,255,.15); border-radius: 8px; color: #f5f5f5;
+      font-size: 14px; outline: none;
+    }
+    .fo-body select:focus, .fo-body input[type="text"]:focus { border-color: var(--accent); }
+    .fo-body input[type="text"] { margin-top: 8px; }
+  ]]></style>
+
+  <defs>
+    <radialGradient id="introGlow" cx="50%" cy="35%" r="38%">
+      <stop offset="0%" style="stop-color:var(--accent);stop-opacity:.10"/>
+      <stop offset="100%" style="stop-color:var(--accent);stop-opacity:0"/>
+    </radialGradient>
+    <linearGradient id="introBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#090909"/>
+      <stop offset="100%" stop-color="#050505"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" style="stop-color:var(--accent-bright)"/>
+      <stop offset="100%" style="stop-color:var(--accent)"/>
+    </linearGradient>
+    <pattern id="scanlines" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="rgba(255,255,255,0.018)"/>
+    </pattern>
+    <filter id="cardShadow" x="-20%" y="-30%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#000" flood-opacity=".65"/>
+    </filter>
+    <filter id="btnShadow" x="-30%" y="-50%" width="160%" height="220%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" style="flood-color:var(--accent)" flood-opacity=".25"/>
+    </filter>
+    <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+  </defs>
+
+  <!-- ============ INTRO ============ -->
+  <g id="intro">
+    <rect id="introBgRect" width="100%" height="100%" fill="url(#introBg)"/>
+    <rect id="introGlowRect" width="100%" height="100%" fill="url(#introGlow)"/>
+    <rect width="100%" height="100%" fill="url(#scanlines)" opacity=".35"/>
+
+    <g id="card">
+      <rect id="cardRect" rx="16" fill="url(#cardBg)" stroke="var(--accent)" stroke-opacity=".28" filter="url(#cardShadow)"/>
+      <text id="cardTitle" text-anchor="middle" font-weight="800" fill="#f5f5f5" letter-spacing=".5">this might not work but idc</text>
+
+      <g id="continueGroup" role="button" tabindex="0">
+        <rect id="continueRect" rx="10" height="48" width="160" fill="url(#btnGrad)" filter="url(#btnShadow)"/>
+        <text id="continueText" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="800" fill="#111" pointer-events="none">Continue</text>
+      </g>
+      <text id="statusText" text-anchor="middle" font-size="14" fill="#aaa"></text>
+    </g>
+  </g>
+
+  <!-- ============ SITE FRAME ============ -->
+  <foreignObject id="siteFO" x="0" y="0" width="100%" height="100%" style="visibility:hidden">
+    <iframe xmlns="http://www.w3.org/1999/xhtml" id="siteFrame" style="width:100%;height:100%;border:none;display:block;background:#fff"></iframe>
+  </foreignObject>
+
+  <!-- ============ SETTINGS BUTTON ============ -->
+  <g id="gearBtn" role="button" tabindex="0">
+    <circle class="ring" r="23"/>
+    <g id="gearIcon" transform="translate(-11 -11) scale(0.9167)" fill="#f5f5f5">
+      <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+    </g>
+  </g>
+
+  <!-- ============ SETTINGS MODAL ============ -->
+  <g id="settingsModal" style="display:none">
+    <rect id="modalOverlay" width="100%" height="100%" fill="rgba(0,0,0,0.8)"/>
+    <g id="modalPanel">
+      <rect id="modalRect" rx="14" width="440" height="470" fill="#101010" stroke="rgba(255,255,255,.15)"/>
+
+      <!-- header -->
+      <text x="24" y="46" font-size="20" font-weight="700" fill="#f5f5f5">Settings</text>
+      <g id="closeBtn" role="button" tabindex="0" transform="translate(402 38)">
+        <rect x="-16" y="-20" width="32" height="32" fill="transparent"/>
+        <text text-anchor="middle" font-size="28" dominant-baseline="central">×</text>
+      </g>
+      <line x1="24" y1="64" x2="416" y2="64" stroke="rgba(255,255,255,.1)"/>
+
+      <!-- accent color -->
+      <text x="24" y="94" font-size="14" font-weight="600" fill="#aaa">Accent Color</text>
+      <foreignObject x="24" y="104" width="392" height="46">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo-body" style="display:flex;gap:12px;align-items:center;height:46px">
+          <input type="color" id="accentColorPicker" value="#fc2651"/>
+          <span id="colorHexCode" style="font-family:monospace;font-size:14px">#fc2651</span>
+        </div>
+      </foreignObject>
+      <g id="swatches" transform="translate(37 172)">
+        <circle class="swatch" cx="0"   cy="0" r="13" fill="#fc2651" data-color="#fc2651"/>
+        <circle class="swatch" cx="34"  cy="0" r="13" fill="#3b82f6" data-color="#3b82f6"/>
+        <circle class="swatch" cx="68"  cy="0" r="13" fill="#10b981" data-color="#10b981"/>
+        <circle class="swatch" cx="102" cy="0" r="13" fill="#8b5cf6" data-color="#8b5cf6"/>
+        <circle class="swatch" cx="136" cy="0" r="13" fill="#f59e0b" data-color="#f59e0b"/>
+        <circle class="swatch" cx="170" cy="0" r="13" fill="#ec4899" data-color="#ec4899"/>
+      </g>
+
+      <!-- tab cloaker -->
+      <text x="24" y="224" font-size="14" font-weight="600" fill="#aaa">Tab Cloaker Preset</text>
+      <foreignObject id="cloakFO" x="24" y="234" width="392" height="130">
+        <div xmlns="http://www.w3.org/1999/xhtml" class="fo-body">
+          <select id="cloakPreset">
+            <option value="none">Default (APLearning)</option>
+            <option value="google">Google Search</option>
+            <option value="drive">Google Drive</option>
+            <option value="classroom">Google Classroom</option>
+            <option value="canvas">Canvas</option>
+            <option value="custom">Custom...</option>
+          </select>
+          <div id="customCloakGroup" style="display:none">
+            <input type="text" id="customTitle" placeholder="Custom Tab Title"/>
+            <input type="text" id="customFavicon" placeholder="Custom Favicon URL"/>
+          </div>
+        </div>
+      </foreignObject>
+
+      <!-- about:blank -->
+      <text x="24" y="394" font-size="14" font-weight="600" fill="#aaa">about:blank Tab Cloak</text>
+      <g id="aboutBlankGroup" role="button" tabindex="0" transform="translate(24 406)">
+        <rect rx="10" width="392" height="46" fill="url(#btnGrad)" filter="url(#btnShadow)"/>
+        <text x="196" y="23" text-anchor="middle" dominant-baseline="central" font-size="16" font-weight="800" fill="#111" pointer-events="none">Open in about:blank Tab</text>
+      </g>
+    </g>
+  </g>
+
+  <script><![CDATA[
+  (function () {
+    var SOURCE = "https://unpkg.com/snoopycollegetricks@latest/index.html";
+    var XHTML = "http://www.w3.org/1999/xhtml";
+    var root = document.documentElement;
+    function $(id) { return document.getElementById(id); }
+
+    var siteFO = $("siteFO"), siteFrame = $("siteFrame");
+    var intro = $("intro"), continueGroup = $("continueGroup"), continueText = $("continueText");
+    var statusText = $("statusText");
+    var settingsModal = $("settingsModal");
+    var accentColorPicker = $("accentColorPicker"), colorHexCode = $("colorHexCode");
+    var cloakPreset = $("cloakPreset"), customCloakGroup = $("customCloakGroup");
+    var customTitleInput = $("customTitle"), customFaviconInput = $("customFavicon");
+    var loading = false;
+
+    var PRESETS = {
+      none:      { title: "APLearning", icon: "favicon.ico" },
+      google:    { title: "Google", icon: "https://www.google.com/favicon.ico" },
+      drive:     { title: "My Drive - Google Drive", icon: "https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png" },
+      classroom: { title: "Classes", icon: "https://ssl.gstatic.com/classroom/favicon.png" },
+      canvas:    { title: "Dashboard", icon: "https://du11hjcvx0uqb.cloudfront.net/br/dist/images/favicon-e10d657a73.ico" }
+    };
+
+    function store(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+
+    /* ---------- layout (replaces CSS flex centering / fixed positioning) ---------- */
+    function layout() {
+      var W = window.innerWidth, H = window.innerHeight;
+
+      // intro card
+      var cw = Math.min(620, W * 0.92), ch = 230;
+      var cx = (W - cw) / 2, cy = (H - ch) / 2;
+      var rect = $("cardRect");
+      rect.setAttribute("x", cx); rect.setAttribute("y", cy);
+      rect.setAttribute("width", cw); rect.setAttribute("height", ch);
+
+      var fs = Math.max(28, Math.min(46, W * 0.05));
+      var title = $("cardTitle");
+      title.setAttribute("font-size", fs);
+      title.setAttribute("x", W / 2);
+      title.setAttribute("y", cy + 48 + fs * 0.85);
+
+      continueGroup.setAttribute("transform", "translate(" + (W / 2 - 80) + " " + (cy + 48 + fs + 28) + ")");
+      $("continueText").setAttribute("x", 80);
+      $("continueText").setAttribute("y", 24);
+      statusText.setAttribute("x", W / 2);
+      statusText.setAttribute("y", cy + ch - 18);
+
+      // gear button (top-right)
+      $("gearBtn").setAttribute("transform", "translate(" + (W - 18 - 23) + " " + (18 + 23) + ")");
+
+      // modal
+      var mw = Math.min(440, W * 0.95), scale = Math.min(1, (W * 0.95) / 440, (H * 0.95) / 470);
+      $("modalPanel").setAttribute("transform",
+        "translate(" + (W - 440 * scale) / 2 + " " + (H - 470 * scale) / 2 + ") scale(" + scale + ")");
+    }
+    window.addEventListener("resize", layout);
+    layout();
+
+    /* ---------- accent colour ---------- */
+    function adjustBrightness(hex, percent) {
+      var num = parseInt(hex.replace("#", ""), 16), amt = Math.round(2.55 * percent),
+          R = (num >> 16) + amt, G = (num >> 8 & 0xFF) + amt, B = (num & 0xFF) + amt;
+      return "#" + (0x1000000 + (R < 255 ? R < 1 ? 0 : R : 255) * 0x10000 +
+        (G < 255 ? G < 1 ? 0 : G : 255) * 0x100 + (B < 255 ? B < 1 ? 0 : B : 255)).toString(16).slice(1);
+    }
+    function setAccentColor(color) {
+      root.style.setProperty("--accent", color);
+      root.style.setProperty("--accent-bright", adjustBrightness(color, 25));
+      accentColorPicker.value = color;
+      colorHexCode.textContent = color;
+      store("userAccentColor", color);
+    }
+
+    /* ---------- tab cloak ---------- */
+    function applyCloak(key, customTitle, customFav) {
+      customTitle = customTitle || ""; customFav = customFav || "";
+      var title = "APLearning", icon = "favicon.ico";
+      if (key === "custom") {
+        title = customTitle || "APLearning";
+        icon = customFav || "favicon.ico";
+        customCloakGroup.style.display = "block";
+      } else {
+        customCloakGroup.style.display = "none";
+        if (PRESETS[key]) { title = PRESETS[key].title; icon = PRESETS[key].icon; }
+      }
+      document.title = title;
+      $("svg-title").textContent = title;
+
+      // SVG documents have no <head>; set favicon through a link in the XHTML namespace when possible
+      var link = document.getElementById("tab-favicon");
+      if (!link) {
+        link = document.createElementNS(XHTML, "link");
+        link.id = "tab-favicon";
+        link.setAttribute("rel", "icon");
+        root.appendChild(link);
+      }
+      link.setAttribute("href", icon);
+
+      store("userCloakPreset", key);
+      store("userCustomTitle", customTitle);
+      store("userCustomFavicon", customFav);
+    }
+
+    function launchAboutBlank() {
+      var w = window.open("about:blank", "_blank");
+      if (!w) { alert("Popup blocked! Please allow popups for this site."); return; }
+      var key = cloakPreset.value;
+      var icon = PRESETS[key] ? PRESETS[key].icon : "favicon.ico";
+      w.document.title = document.title;
+      var link = w.document.createElement("link");
+      link.rel = "icon"; link.href = icon;
+      w.document.head.appendChild(link);
+      var f = w.document.createElement("iframe");
+      f.style.cssText = "width:100vw;height:100vh;border:none;position:fixed;inset:0";
+      f.src = window.location.href;
+      w.document.body.style.margin = "0";
+      w.document.body.appendChild(f);
+    }
+
+    function loadSavedSettings() {
+      var c = load("userAccentColor");
+      if (c) setAccentColor(c);
+      var p = load("userCloakPreset") || "none";
+      var t = load("userCustomTitle") || "", f = load("userCustomFavicon") || "";
+      cloakPreset.value = p; customTitleInput.value = t; customFaviconInput.value = f;
+      applyCloak(p, t, f);
+    }
+
+    /* ---------- modal ---------- */
+    function openModal()  { settingsModal.style.display = "inline"; }
+    function closeModal() { settingsModal.style.display = "none"; }
+    function activate(el, fn) {
+      el.addEventListener("click", fn);
+      el.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(); }
+      });
+    }
+    activate($("gearBtn"), openModal);
+    activate($("closeBtn"), closeModal);
+    $("modalOverlay").addEventListener("click", closeModal);
+    activate($("aboutBlankGroup"), launchAboutBlank);
+
+    accentColorPicker.addEventListener("input", function (e) { setAccentColor(e.target.value); });
+    var swatches = document.querySelectorAll(".swatch");
+    for (var i = 0; i < swatches.length; i++) {
+      (function (s) { s.addEventListener("click", function () { setAccentColor(s.getAttribute("data-color")); }); })(swatches[i]);
+    }
+    cloakPreset.addEventListener("change", function (e) {
+      applyCloak(e.target.value, customTitleInput.value, customFaviconInput.value);
+    });
+    customTitleInput.addEventListener("input", function () {
+      applyCloak("custom", customTitleInput.value, customFaviconInput.value);
+    });
+    customFaviconInput.addEventListener("input", function () {
+      applyCloak("custom", customTitleInput.value, customFaviconInput.value);
+    });
+
+    /* ---------- site loading ---------- */
+    function cleanFramePage(doc) {
+      if (!doc) return;
+      var sel = [
+        "ins.adsbygoogle", "[data-ad]", "[data-ad-slot]", "[data-ad-client]",
+        '[aria-label*="advertisement" i]', '[aria-label*="sponsored" i]',
+        'iframe[src*="doubleclick" i]', 'iframe[src*="googlesyndication" i]',
+        'iframe[src*="adnxs" i]', 'iframe[src*="adsystem" i]',
+        '[id^="ad-"]', '[id^="ads-"]', '[class^="ad-"]', '[class^="ads-"]'
+      ].join(",");
+      doc.querySelectorAll(sel).forEach(function (el) { el.remove(); });
+      doc.querySelectorAll("script[src]").forEach(function (s) {
+        if (/doubleclick|googlesyndication|googleadservices|adnxs|adsystem|popads|propellerads/.test(s.src.toLowerCase())) s.remove();
+      });
+    }
+
+    function loadSite() {
+      if (loading) return;
+      loading = true;
+      continueGroup.classList.add("disabled");
+      continueText.textContent = "Loading...";
+      statusText.textContent = "";
+
+      siteFrame.onload = function () {
+        intro.style.display = "none";
+        siteFO.style.visibility = "visible";
+        try {
+          var d = siteFrame.contentDocument || siteFrame.contentWindow.document;
+          cleanFramePage(d);
+          new MutationObserver(function () { cleanFramePage(d); })
+            .observe(d.documentElement, { childList: true, subtree: true });
+        } catch (err) { console.log("Framed site loaded."); }
+      };
+      siteFrame.onerror = function () {
+        loading = false;
+        continueGroup.classList.remove("disabled");
+        continueText.textContent = "Continue";
+        statusText.textContent = "The site could not be loaded. Try again.";
+      };
+      siteFrame.src = SOURCE;
+    }
+
+    activate(continueGroup, loadSite);
+    loadSavedSettings();
+  })();
+  ]]></script>
+</svg>
